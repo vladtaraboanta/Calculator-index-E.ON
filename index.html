@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator index E.ON</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:500,700&subset=latin' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <form action="" class="form">
+        <h1>Autocitire Index</h1>
+        <input type="text" name="index-contor-curent" placeholder="Index contor curent (kWh)">
+        <input type="text" name="index-contor-gaz" placeholder="Index contor gaz (m3)">
+        <input type="submit" value="Calculează">
+    </form>
+
+    <div class="content">
+        <div class="contor-curent">
+            <div id="energie-activa" class="text">Energie Activă</div>
+            <div id="contributie-cogenerare" class="text">Contribuție Cogenerare</div>
+            <div id="acciza-necomerciala" class="text">Acciză Necomercială</div>
+            <div id="certificate-verzi" class="text">Certificate Verzi</div>
+            <div id="abonament" class="text">Abonament</div>
+            <div id="total-curent" class="text">Preț total curent</div>
+        </div>
+        <div class="contor-gaz">
+            <div id="consum-gaz" class="text">Consumul de gaz</div>
+            <div id="abonament" class="text">Abonament</div>
+            <div id="document-facturare" class="text">Document de facturare SD</div>
+            <div id="total-gaz" class="text">Preț total gaz</div>
+        </div>
+
+        <div id="pret-total" class="text">Preț total</div>
+        <p class="disclaimer">Toate prețurile includ TVA (19%).</p>
+        <div class="reset">Resetare</div>
+    </div>
+</div>
+</body>
+</html>
