@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator index E.ON</title>
     <link rel="stylesheet" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:500,700&subset=latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:500,700&subset=latin' rel='stylesheet'
+          type='text/css'>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            // Animate loader off screen
+            $('.loader').fadeOut('500');
+        });
+    </script>
 </head>
 <body>
+<div class="loader"></div>
 <div class="wrapper">
+    <div class="logo"></div>
     <form action="#" class="form">
         <h1>Autocitire Index</h1>
-        <input type="text" name="index-contor-curent" placeholder="Index contor curent (kWh)">
-        <input type="text" name="index-contor-gaz" placeholder="Index contor gaz (m3)">
-        <input type="submit" value="Calculează">
+        <input type="number" name="index-contor-curent" placeholder="Index contor curent (kWh)">
+        <input type="number" name="index-contor-gaz" placeholder="Index contor gaz (m3)">
+        <button>Calculează</button>
+        <p class="error">Completează toate câmpurile!</p>
     </form>
 
     <div class="content">
