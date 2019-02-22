@@ -35,7 +35,7 @@ $(function () {
     var documentFacturare = content.find('#document-facturare');
     var totalGaz = content.find('#total-gaz');
 
-    var abonament = content.find('#abonament');
+    var abonament = content.find('.abonament');
     var pretTotal = content.find('#pret-total');
 
     //Default text gaz
