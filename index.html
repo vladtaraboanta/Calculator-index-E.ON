@@ -22,8 +22,8 @@
     <div class="logo"></div>
     <form action="#" class="form">
         <h1>Autocitire Index</h1>
-        <input type="number" name="index-contor-curent" placeholder="Index contor curent (kWh)">
-        <input type="number" name="index-contor-gaz" placeholder="Index contor gaz (m3)">
+        <input type="number" pattern="[0-9]*" inputmode="numeric" name="index-contor-curent" placeholder="Index contor curent (kWh)">
+        <input type="number" pattern="[0-9]*" inputmode="numeric" name="index-contor-gaz" placeholder="Index contor gaz (m3)">
         <button>Calculează</button>
         <p class="error">Completează toate câmpurile!</p>
     </form>
@@ -34,12 +34,12 @@
             <div id="contributie-cogenerare" class="text">Contribuție Cogenerare</div>
             <div id="acciza-necomerciala" class="text">Acciză Necomercială</div>
             <div id="certificate-verzi" class="text">Certificate Verzi</div>
-            <div id="abonament" class="text">Abonament</div>
+            <div class="abonament text">Abonament</div>
             <div id="total-curent" class="text">Preț total curent</div>
         </div>
         <div class="contor-gaz">
             <div id="consum-gaz" class="text">Consumul de gaz</div>
-            <div id="abonament" class="text">Abonament</div>
+            <div class="abonament text">Abonament</div>
             <div id="document-facturare" class="text">Document de facturare SD</div>
             <div id="total-gaz" class="text">Preț total gaz</div>
         </div>
